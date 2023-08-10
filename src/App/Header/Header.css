@@ -1,0 +1,55 @@
+/* header.css */
+
+body {
+    font-family: 'Chivo', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    border-bottom: 1px solid black;
+}
+
+.header .brand-name {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; /* In case it's a link */
+}
+
+.header .nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;  /* Space between items */
+}
+
+.header .nav-links li {
+    display: inline;
+}
+
+.header .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.header .nav-links a:hover {
+    color: #ddd; /* Lighter color on hover for a subtle effect */
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header .nav-links {
+        margin-top: 10px;
+        gap: 10px;
+    }
+}
