@@ -1,16 +1,24 @@
 import React from 'react';
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import './Header.css';
 
 const Header: React.FC = () => {
   return (
-    <div className="header">
-        <a href="#" className="brand-name"> Jonathan Calso</a>
+    <Router>
+      <div className="header">
+        <Link to="/" className="brand-name"> Jonathan Calso</Link>
         <ul className="nav-links">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#resume">RESUME</a></li>
-            <li><a href="#thoughts">THOUGHTS</a></li>
+            <li><Link to="/about">ABOUT</Link></li>
+            <li><Link to="/resume">RESUME</Link></li>
+            <li><Link to="/thoughts">THOUGHTS</Link></li>
         </ul>
-    </div>
+        <Routes>
+          <Route path="/about"/>
+          <Route path="/resume"/>
+          <Route path="/thoughts" />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
