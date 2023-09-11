@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
 
       <h1 className="div2">Test Div 2</h1>
 
-      <h1 className="div3">Test Div 3</h1>
+      <h1 className="div3">Test Div3</h1>
 
       <div className="social-media-icons">
         <a href="https://www.linkedin.com/in/jonathan-calso/"><img src={linkedinIcon} alt="LinkedIn"/></a>
